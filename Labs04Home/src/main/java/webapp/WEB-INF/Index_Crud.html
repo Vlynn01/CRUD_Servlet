@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chu CRUD</title>
+</head>
+<body>
+<a href="ViewServlet">View All Records</a>
+
+<h1>Add New User</h1>
+<form action="SaveServlet" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" required/></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" required/></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required/></td>
+        </tr>
+        <tr>
+            <td>Sex:</td>
+            <td>
+                <input type="radio" name="sex" value="male" required>Male
+                <input type="radio" name="sex" value="female" required>Female
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select name="country" style="width:150px" required>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Save Employee"/></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
